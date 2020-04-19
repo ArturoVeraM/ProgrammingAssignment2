@@ -33,3 +33,5 @@ y <- solve(ma, ...)
 x$setminv(y)
 y
 }
+
+## End of the program
