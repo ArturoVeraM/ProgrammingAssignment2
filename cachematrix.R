@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This code corresponds to the second assigment of the R programming course 
+## on Coursera and consists of the elaboration of two two functions that 
+## store the inverse of a matrix in cache
 
-## Write a short comment describing this function
+## Author: Arturo Vera
+
+## This function stores in the cache a matrix that it receives as input
 
 makeCacheMatrix <- function(x = matrix()){
   m <- NULL
@@ -16,7 +19,9 @@ makeCacheMatrix <- function(x = matrix()){
 }
 
 
-## Write a short comment describing this function 
+## This function verifies if the inverse of the array that was received as input has 
+## already been calculated and is located in the cache, in which case in which case it 
+## is called, otherwise the function calculates the inverse matrix and stores it in cache
 
 cacheSolve <- function(x,...){y <- x$getminv()
 if (!is.null(y)){
